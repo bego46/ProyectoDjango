@@ -1,0 +1,12 @@
+{% extends 'layouts/layout.html' %}
+
+{% block title %} {{title}} {% endblock  %}
+
+{% block content %} 
+
+    <h2 class="title"> {{title}} </h2>
+
+    {% include 'articles/articles.html' %}    
+    {% include 'articles/pagination.html' %}
+
+{% endblock  %}
